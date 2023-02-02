@@ -40,8 +40,8 @@ class SystemTrayIcon(QSystemTrayIcon):
 
     def add_items(self ,bombilla, bombilla_name):
         actions = {'color':lambda: self.elige_color(bombilla),
-            'brillo 50%': lambda: self.bombilla.set_brightness_percentage(50),
-        'brillo 100%': lambda: self.bombilla.set_brightness_percentage(100),
+            'brillo 50%': lambda: bombilla.set_brightness_percentage(50),
+        'brillo 100%': lambda: bombilla.set_brightness_percentage(100),
         'encender':  lambda: bombilla.turn_on(),
         'apagar': lambda: bombilla.turn_off()}
         self.light_bulb = self.menu.addMenu(bombilla_name)
