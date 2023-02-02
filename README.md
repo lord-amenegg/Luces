@@ -42,5 +42,5 @@ The Wizard will ask if you want to poll all the devices. If you do, it will disp
 
 As you can see more actions can be added to the actions dictionary (work in progress)
 # To do: 
--group the lightbulbs by room and add separator to menu
--find a way for the script to differentiate between lighbulbs and other tuya enabled devices.
+## group the lightbulbs by room and add separator to menu
+## find a way for the script to differentiate between lighbulbs and other tuya enabled devices.
