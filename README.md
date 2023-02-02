@@ -38,3 +38,8 @@ It will also ask for a sample Device ID. Use one from step 2 above or found in t
 The Wizard will poll the Tuya IoT Cloud Platform and print a JSON list of all your registered devices with the "name", "id" and "key" of your registered device(s). The "key"s in this list are the Devices' Local_Key you will use to access your device.
 In addition to displaying the list of devices, Wizard will create a local file devices.json that TinyTuya will use to provide additional details for scan results from tinytuya.deviceScan() or when running python -m tinytuya scan. The wizard also creates a local file tuya-raw.json that contains the entire payload from Tuya Cloud.
 The Wizard will ask if you want to poll all the devices. If you do, it will display the status of all devices on record and create a snapshot.json file with these results.
+
+As you can see more actions can be added to the actions dictionary (work in progress)
+To do: 
+-group the lightbulbs by room and add separator to menu
+-find a way for the script to differentiate between lighbulbs and other tuya enabled devices.
