@@ -1,7 +1,7 @@
-# Creates a tray menu to control all your tuya enabled lights.
-It use the data created on your snapshot.json file, which needs to be created using the instructions from the tinituya project page:
+# Tray menu to control all your tuya enabled lights.
+First of all you need to create the snapshot.json file, using the instructions from the tinituya project page:
 
-Setup Wizard - Getting Local Keys
+# Setup Wizard - Getting Local Keys
 TinyTuya has a built-in setup Wizard that uses the Tuya IoT Cloud Platform to generate a JSON list (devices.json) of all your registered devices, including secret Local_Key and Name of your devices. Follow the steps below:
 
 PAIR - Download the Smart Life App or Tuya Smart App, available for iPhone or Android. Pair all of your Tuya devices (this is important as you cannot access a device that has not been paired).
@@ -39,7 +39,8 @@ The Wizard will poll the Tuya IoT Cloud Platform and print a JSON list of all yo
 In addition to displaying the list of devices, Wizard will create a local file devices.json that TinyTuya will use to provide additional details for scan results from tinytuya.deviceScan() or when running python -m tinytuya scan. The wizard also creates a local file tuya-raw.json that contains the entire payload from Tuya Cloud.
 The Wizard will ask if you want to poll all the devices. If you do, it will display the status of all devices on record and create a snapshot.json file with these results.
 
+
 As you can see more actions can be added to the actions dictionary (work in progress)
-To do: 
+# To do: 
 -group the lightbulbs by room and add separator to menu
 -find a way for the script to differentiate between lighbulbs and other tuya enabled devices.
